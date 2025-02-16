@@ -41,6 +41,7 @@ header img {
 .hero {
   display: flex;
   gap: 50px;
+  width: 100%;
 }
 .hero__text {
   padding-block: 20px;
@@ -94,4 +95,34 @@ header img {
 }
 .attribution a {
   color: var(--soft-magenta);
+}
+/* Responsive */
+@media (max-width: 1230px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__text {
+    text-align: center;
+  }
+  .links {
+    justify-content: center;
+  }
+}
+@media (max-width: 840px) {
+  .hero__img {
+    min-width: 320px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    margin: 40px 32px;
+  }
+  .hero__text-title {
+    font-size: 1.5rem;
+  }
+  .hero__text-description {
+    font-size: 1rem;
+  }
 }
