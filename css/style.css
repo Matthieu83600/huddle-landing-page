@@ -1,0 +1,97 @@
+:root {
+  /* Colors */
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+  /* Typography */
+  --font-family-title: "Poppins", serif;
+  --font-family-body: "Open Sans", serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --fs-16: 1rem;
+}
+body {
+  background-color: var(--violet);
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--fs-16);
+  color: var(--white);
+  min-height: 100vh;
+  margin: 60px 85px;
+}
+header {
+  margin-block-end: 85px;
+}
+header img {
+  width: 180px;
+  height: auto;
+}
+/* H1 */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hero {
+  display: flex;
+  gap: 50px;
+}
+.hero__text {
+  padding-block: 20px;
+}
+.hero__text-title {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-semibold);
+  font-size: 2rem;
+  line-height: 150%;
+}
+.hero__text-description {
+  font-size: 1.2rem;
+}
+.hero__text-register {
+  background-color: var(--white);
+  font-size: 1.2rem;
+  color: var(--violet);
+  display: inline-block;
+  margin-top: 30px;
+  border: none;
+  border-radius: 25px;
+  height: 48px;
+  width: 170px;
+}
+.hero__text-register:hover {
+  cursor: pointer;
+  background-color: var(--soft-magenta);
+  color: var(--white);
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  gap: 10px;
+  margin-block: 30px 50px;
+}
+.links__item {
+  color: var(--white);
+  padding: 7px 14px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+.links__item:hover {
+  color: var(--soft-magenta);
+  border: 2px solid var(--soft-magenta);
+}
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--soft-magenta);
+}
