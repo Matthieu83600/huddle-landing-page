@@ -49,11 +49,11 @@ header img {
 .hero__text-title {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-semibold);
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 150%;
 }
 .hero__text-description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .hero__text-register {
   background-color: var(--white);
@@ -88,6 +88,7 @@ header img {
 .links__item:hover {
   color: var(--soft-magenta);
   border: 2px solid var(--soft-magenta);
+  cursor: pointer;
 }
 .attribution {
   font-size: 13px;
